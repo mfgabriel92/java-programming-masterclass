@@ -46,9 +46,33 @@ public class App {
         System.out.println("Min long value: " + minLongValue);
         System.out.println("Max long value: " + maxLongValue);
 
-        int castedIntValue = (minValue / 2);
-        byte castedByteValue = (byte) (minByteValue / 2);
-        short castedShortValue = (short) (minShortValue / 2);
-        long castedLongValue = (long) (minLongValue / 2);
+        // int castedIntValue = (minValue / 2);
+        // byte castedByteValue = (byte) (minByteValue / 2);
+        // short castedShortValue = (short) (minShortValue / 2);
+        // long castedLongValue = (long) (minLongValue / 2);
+
+        // ------ //
+        System.out.println("----");
+        System.out.println("Float");
+        System.out.println("----");
+        float minFloatValue = Float.MIN_VALUE;
+        float maxFloatValue = Float.MAX_VALUE;
+
+        System.out.println("Min float value: " + minFloatValue);
+        System.out.println("Max float value: " + maxFloatValue);
+
+        // ------ //
+        System.out.println("----");
+        System.out.println("Float");
+        System.out.println("----");
+        double minDoubleValue = Double.MIN_VALUE;
+        double maxDoubleValue = Double.MAX_VALUE;
+
+        System.out.println("Min double value: " + minDoubleValue);
+        System.out.println("Max double value: " + maxDoubleValue);
+
+        int myInt = 5;
+        float myFloat = 5.25f;
+        double myDouble = 5.25d;
     }
 }
