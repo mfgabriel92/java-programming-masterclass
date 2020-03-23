@@ -45,5 +45,10 @@ public class App {
 
         System.out.println("Min long value: " + minLongValue);
         System.out.println("Max long value: " + maxLongValue);
+
+        int castedIntValue = (minValue / 2);
+        byte castedByteValue = (byte) (minByteValue / 2);
+        short castedShortValue = (short) (minShortValue / 2);
+        long castedLongValue = (long) (minLongValue / 2);
     }
 }
