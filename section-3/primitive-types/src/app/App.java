@@ -71,8 +71,8 @@ public class App {
         System.out.println("Min double value: " + minDoubleValue);
         System.out.println("Max double value: " + maxDoubleValue);
 
-        int myInt = 5;
-        float myFloat = 5.25f;
-        double myDouble = 5.25d;
+        // int myInt = 5;
+        // float myFloat = 5.25f;
+        // double myDouble = 5.25d;
     }
 }
