@@ -1,2 +1,6 @@
 .history/
+
 **/bin/
+**/.settings/
+**/.classpath
+**/.project
