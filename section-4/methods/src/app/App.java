@@ -60,14 +60,16 @@ public class App {
     }
 
     public static int calculateHighscorePosition(int playerScore) {
+        int pos = 4;
+
         if (playerScore >= 1000) {
-            return 1;
-        } else if ((playerScore >= 500) && (playerScore < 1000)) {
-            return 2;
-        } else if ((playerScore >= 100) && (playerScore < 500)) {
-            return 3;
+            pos = 1;
+        } else if (playerScore >= 500) {
+            pos = 2;
+        } else if (playerScore >= 100) {
+            pos = 3;
         }
 
-        return 4;
+        return pos;
     }
 }
