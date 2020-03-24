@@ -19,5 +19,20 @@ public class App {
 
         result = result % 3;
         System.out.println("result % 3 = " + result);
+
+        result++;
+        System.out.println("result++ = " + result);
+
+        result += 3;
+        System.out.println("result += 3 = " + result);
+
+        result -= 2;
+        System.out.println("result -= 2 = " + result);
+
+        result *= 7;
+        System.out.println("result *= 7 = " + result);
+
+        result /= 5;
+        System.out.println("result /= 5 = " + result);
     }
 }
