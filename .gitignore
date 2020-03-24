@@ -1,6 +1,7 @@
 .history/
 
 **/bin/
+**/.idea/
 **/.settings/
 **/.classpath
 **/.project
