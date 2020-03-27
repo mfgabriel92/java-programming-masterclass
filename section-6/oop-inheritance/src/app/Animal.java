@@ -25,8 +25,8 @@ public class Animal {
         this.family = family;
     }
 
-    public void move() {
-        System.out.println("Animal.move()");
+    public void move(int speed) {
+        System.out.println("Animal.move(" + speed + ")");
     };
     
     public void eat() {
