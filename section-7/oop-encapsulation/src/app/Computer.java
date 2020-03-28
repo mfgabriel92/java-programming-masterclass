@@ -4,22 +4,17 @@ public class Computer {
     private String model;
     private Motherboard motherboard;
     private Ram ram;
+    private Monitor monitor;
 
-	public Computer(String model, Motherboard motherboard, Ram ram) {
+	public Computer(String model, Motherboard motherboard, Ram ram, Monitor monitor) {
 		this.model = model;
 		this.motherboard = motherboard;
-		this.ram = ram;
+        this.ram = ram;
+        this.monitor = monitor;
     }
     
-    public String getModel() {
-        return model;
-    }
-
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
-
-    public Ram getRam() {
-        return ram;
+    public void powerUp() {
+        System.out.println("Computer.powerUp()");
+        motherboard.boot();
     }
 }

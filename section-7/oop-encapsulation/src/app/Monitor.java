@@ -2,18 +2,18 @@ package app;
 
 public class Monitor {
     private String model;
-    private double inches;
+    private Resolution resolution;
 
-	public Monitor(String model, double inches) {
+	public Monitor(String model, Resolution resolution) {
 		this.model = model;
-		this.inches = inches;
+		this.resolution = resolution;
     }
     
     public String getModel() {
         return model;
     }
 
-    public double getInches() {
-        return inches;
+    public Resolution getResolution() {
+        return resolution;
     }
 }

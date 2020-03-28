@@ -16,4 +16,13 @@ public class Motherboard {
     public int getRamSlots() {
         return ramSlots;
     }
+
+    public void boot() {
+        System.out.println("Motherboard.boot()");
+        initBios();
+    }
+
+    private void initBios() {
+        System.out.println("Motherboard.initBios()");
+    }
 }
