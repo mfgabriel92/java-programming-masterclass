@@ -2,9 +2,9 @@ package app;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T extends Player> {
     private String name;
-    private ArrayList<Player> members = new ArrayList<>();
+    private ArrayList<T> members = new ArrayList<>();
     int played = 0;
     int won = 0;
     int lost = 0;
@@ -18,7 +18,7 @@ public class Team {
         return name;
     }
 
-    public boolean addPlayer(Player player) {
+    public boolean addPlayer(T player) {
         if (members.contains(player)) {
             System.out.println(player.getName() + " is already on the team");
             return false;
@@ -34,7 +34,7 @@ public class Team {
         return members.size();
     }
 
-    public void matchResult(Team opponent, int ourScore, int theirScore) {
+    public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
         if (ourScore > theirScore) {
             won++;
         } else if (ourScore == theirScore) {
