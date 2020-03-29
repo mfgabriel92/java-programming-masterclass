@@ -1,19 +1,22 @@
 package app;
 
-public abstract class Bird extends Animal {
+public abstract class Bird extends Animal implements CanFly {
 	public Bird(String name) {
 		super(name);
 	}
 
 	@Override
 	public void move() {
-		System.out.println(getName() + " is moving.");
+		System.out.println(getName() + " is moving");
 	}
 
 	@Override
 	public void eat() {
 		System.out.println(getName() + " is eating");
-    }
-    
-    public abstract void fly();
+	}
+	
+	@Override
+	public void fly() {
+		System.out.println(getName() + " is flying");
+	}
 }
